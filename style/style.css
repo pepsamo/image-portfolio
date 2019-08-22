@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Alfa;
+    font-family: "Alfa Slab";
     src: url(../font/alfa-slab/AlfaSlabOne-Regular.ttf);
 }
 html {
@@ -15,7 +15,7 @@ header {
     border-bottom: 2px solid #fff;
 }
 header h1 {
-    font-family: Alfa;
+    font-family: "Alfa Slab";
     letter-spacing: .5em;
     font-size: 3rem;
     color: #fff;
@@ -29,8 +29,8 @@ header h1 {
 
 section {
     background-color: transparent;
-    height: 350px;
-    width: 450px;
+    height: 330px;
+    width: 400px;
     perspective: 10000px;
     margin: 10px;
     border: 1px solid #fff;
@@ -42,6 +42,7 @@ section .flip-cover {
     width: 100%;
     transition: 1s;
     transform-style: preserve-3d;
+    background-image: radial-gradient(circle,#fff, rgb(51, 102, 202) 62%, blue);
 }
 
 section:hover .flip-cover {
@@ -57,12 +58,13 @@ section:hover .flip-cover {
 }
 
 .flip-cover img {
-    background-color: #000;
+    /*background-color: #000;*/
+    opacity: 0.8;
     color: #000;
 }
 
 .description {
-    background-color: rgb(51, 102, 202);
+    /*background-color: inherit;*/
     color: #fff;
     text-align: center;
     transform: rotateY(180deg);
@@ -70,12 +72,22 @@ section:hover .flip-cover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom right, 
+     rgb(51, 102, 202) 62%, 
+     rgb(125, 159, 226));
+     
 }
 
 .description h1 {
     width: 80%;
     border-bottom: 1px solid #fff;
+    font-family: "Merriweather";
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 .description p {
-    width: 80%;
+    width: 75%;
+    font-family: Raleway;
+    font-size: 1.5rem;
+    margin: 7px;
 }
