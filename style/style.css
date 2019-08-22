@@ -4,16 +4,54 @@ header {
     text-align: center;
     border-bottom: 2px solid #000;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 section {
-    margin: 10px;
-    border: 1px solid #000;
-}
-section img {
+    background-color: transparent;
     height: 350px;
     width: 450px;
+    perspective: 10000px;
+    margin: 10px;
+}
+
+section .flip-cover {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+section:hover .flip-cover {
+    transform: rotateY(180deg);
+}
+
+.flip-cover img,
+.description {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+}
+
+.flip-cover img {
+    background-color: #fff;
+    color: #fff;
+}
+
+.description {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.description h1 {
+    width: 80%;
+    border-bottom: 1px solid black;
 }
