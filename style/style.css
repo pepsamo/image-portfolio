@@ -1,8 +1,24 @@
+@font-face {
+    font-family: Alfa;
+    src: url(../font/alfa-slab/AlfaSlabOne-Regular.ttf);
+}
+html {
+    font-size: 14px;
+}
+body {
+    background-color: rgb(51, 102, 202);
+}
 header {
     width: 80%;
     margin: auto;
     text-align: center;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fff;
+}
+header h1 {
+    font-family: Alfa;
+    letter-spacing: .5em;
+    font-size: 3rem;
+    color: #fff;
 }
 
 .container {
@@ -17,6 +33,7 @@ section {
     width: 450px;
     perspective: 10000px;
     margin: 10px;
+    border: 1px solid #fff;
 }
 
 section .flip-cover {
@@ -40,18 +57,25 @@ section:hover .flip-cover {
 }
 
 .flip-cover img {
-    background-color: #fff;
-    color: #fff;
+    background-color: #000;
+    color: #000;
 }
 
 .description {
-    background-color: #fff;
-    color: #000;
+    background-color: rgb(51, 102, 202);
+    color: #fff;
     text-align: center;
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .description h1 {
     width: 80%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #fff;
+}
+.description p {
+    width: 80%;
 }
