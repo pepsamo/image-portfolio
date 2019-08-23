@@ -96,4 +96,10 @@ section:hover .flip-cover {
 footer {
     padding: 15px;
     box-shadow: 0 -5px 5px -5px #000; 
+    text-align: center;
+}
+footer span {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Merriweather";
 }
